@@ -3,6 +3,7 @@ python:
   - "2.7"
 script: bash ./travis.sh
 install:
+  - "pip install --upgrade pip --user --quiet"
   - "pip install redis"
   - "pip install nose"
   - "pip install git+https://github.com/andymccurdy/redis-py.git@2.10.3"
