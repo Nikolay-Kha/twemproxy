@@ -4,10 +4,10 @@ python:
 script: bash ./travis.sh
 install:
   - "pip install --upgrade pip --user --quiet"
-  - "pip install redis"
-  - "pip install nose"
-  - "pip install git+https://github.com/andymccurdy/redis-py.git@2.10.3"
-  - "pip install git+https://github.com/idning/python-memcached.git#egg=memcache"
+  - "pip install redis --user"
+  - "pip install nose --user"
+  - "pip install git+https://github.com/andymccurdy/redis-py.git@2.10.3 --user"
+  - "pip install git+https://github.com/idning/python-memcached.git#egg=memcache --user"
 services:
   - memcached
   - redis
