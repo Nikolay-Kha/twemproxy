@@ -1,4 +1,6 @@
-language: c
+language: c, python
+python:
+  - "2.7"
 script: bash ./travis.sh
 services:
   - memcached
