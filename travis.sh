@@ -22,7 +22,8 @@ ln -s `pwd`/src/nutcracker  tests/_binaries/
 cp `which redis-server` tests/_binaries/
 cp `which redis-cli` tests/_binaries/
 cp `which memcached` tests/_binaries/
+ls tests/_binaries/
 
 #run test
-cd tests/ && nosetests -x -vvv
+(cd tests/ && nosetests -x -vvv)
 
