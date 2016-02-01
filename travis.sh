@@ -5,7 +5,7 @@
 
 #install deps if we are in travis
 if [ -n "$TRAVIS" ]; then
-    sudo apt-get install socat memcached redis-server redis-tools
+    sudo apt-get install socat
 
     #python libs
     sudo pip install redis
