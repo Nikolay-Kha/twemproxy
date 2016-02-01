@@ -1,3 +1,6 @@
 language: c
 script: bash ./travis.sh
+services:
+  - memcached
+  - redis
 sudo: required
