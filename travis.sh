@@ -5,7 +5,7 @@
 
 #install deps if we are in travis
 if [ -n "$TRAVIS" ]; then
-    sudo apt-get install socat
+    sudo apt-get install socat memcached redis-server redis-tools
 
     #python libs
     sudo pip install redis
@@ -24,5 +24,5 @@ cp `which redis-cli` tests/_binaries/
 cp `which memcached` tests/_binaries/
 
 #run test
-#cd tests/ && nosetests -x -v
+cd tests/ && nosetests -x -vvv
 
